@@ -1,0 +1,22 @@
+{
+  "name": "electron-monaco-editor-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "electron .",
+    "pack": "electron-packager . sample --out=dist --arch=x64 --platform=win32 --version=1.2.8 --overwrite --prune --ignore=dist --ignore=typings"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-packager": "^7.3.0",
+    "electron-prebuilt": "^1.2.8",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.5.3"
+  }
+}
